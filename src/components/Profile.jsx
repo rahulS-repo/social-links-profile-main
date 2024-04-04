@@ -2,7 +2,8 @@ import React from 'react'
 import styles from "./Profile.module.css";
 function Profile() {
 
-    const IMAGE_URL = '../assets/images/avatar-jessica.jpeg';
+    const IMAGE_URL = "./src/assets/images/avatar-jessica.jpeg";
+    // src\assets\images\avatar-jessica.jpeg
   return (
     <section className={styles['profile-section']}>
         <section className={styles['profile-section__top']}>
