@@ -1,10 +1,13 @@
 import React from 'react'
 import styles from "./Profile.module.css";
 function Profile() {
+
+    const IMAGE_URL = "/public/avatar-jessica.jpeg"
+    // src\assets\images\avatar-jessica.jpeg
   return (
     <section className={styles['profile-section']}>
         <section className={styles['profile-section__top']}>
-            <img className={styles['profile-section__img']} src="./src/assets/images/avatar-jessica.jpeg" alt="profile image" />
+            <img className={styles['profile-section__img']} src={IMAGE_URL} alt="profile_image" />
             <div className={styles['profile-section__heading-group']}>
                 <h1>Jessica Randall</h1>
                 <h3>London, United Kingdom</h3>
