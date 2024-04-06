@@ -1,7 +1,9 @@
+/* Default styles */
 .profile-section {
   background-color: hsl(0, 0%, 12%);
   color: azure;
-  width: 385px;
+  width: 100%; /* Set width to 100% to make it responsive */
+  max-width: 385px; /* Set maximum width */
   border-radius: 16px;
   margin: 0 auto;
   padding: 40px;
@@ -9,21 +11,24 @@
   flex-direction: column;
   gap: 18px;
 }
+
 .profile-section__top {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  /* justify-content: center; */
   align-items: center;
 }
+
 .profile-section__img {
   height: 90px;
   width: 90px;
   border-radius: 200px;
 }
+
 .profile-section__heading-group {
   text-align: center;
 }
+
 .profile-section__heading-group h1 {
   margin: 0;
   margin-bottom: 8px;
@@ -37,13 +42,16 @@
   font-size: 16px;
   font-weight: 600;
 }
+
 .profile-section__summary {
 }
+
 .profile-section__bottom {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
+
 .profile-section__social-links {
   background-color: hsl(0, 0%, 20%);
   color: hsl(0, 0%, 100%);
@@ -55,8 +63,23 @@
   cursor: pointer;
   font-weight: 600;
 }
+
 .profile-section__social-links:hover {
   background-color: hsl(75, 94%, 57%);
   color: hsl(0, 0%, 12%);
   transition: all 0.3s;
+}
+
+/* Media query for mobile */
+@media (max-width: 375px) {
+  .profile-section {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Media query for desktop */
+@media (min-width: 1440px) {
+  .profile-section {
+    width: 50%; /* Adjust width for larger screens */
+  }
 }
